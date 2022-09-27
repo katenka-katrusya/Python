@@ -7,3 +7,16 @@ if num < 0:
 else:
     for i in range(-num, num + 1):
         print(i, end = " ") 
+
+
+# 2 способ:
+
+N = int(input("Введите число N: "))
+
+listInt = []
+i = -N
+while i <= N:
+    listInt.append(i)
+    i += 1
+
+print(listInt)

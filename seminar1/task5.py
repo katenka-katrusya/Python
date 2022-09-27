@@ -22,3 +22,16 @@ if a == b:
     print("Утверждение истинно")
 elif a != b:
     print("Утверждение ложно")
+
+# способ, правильный:
+trigger = True # флаг
+
+for x in [True, False]:          # range(2)
+    for y in [True, False]:      # range(2)
+        for z in [True, False]:  # range(2)
+           if not (x or y or z) != (not x and not y and not z):
+            print("Неверно")
+            trigger = False
+            break
+
+if trigger: print("Выражение верно")

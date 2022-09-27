@@ -11,3 +11,5 @@ elif day == 6 or day == 7:
     print("Выходной")
 else:
     print("Будний день")
+
+# решить так же можно через matсh case (как switch case в c#)
