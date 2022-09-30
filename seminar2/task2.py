@@ -10,7 +10,7 @@ count = 1
 if N == 0 or N == 1:
     print(f"Факториал числа {N} = 1")
 else:
-    for i in range(N):
-        count *= i + 1
+    for i in range(N):  
+        count *= i + 1  
         result.append(count)    
 print(f"Факториал числа {N} = {count}. Набор произведений числа {N} = {result}")
