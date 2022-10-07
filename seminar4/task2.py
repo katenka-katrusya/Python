@@ -16,3 +16,17 @@ else:
         else:
             i += 1
     print(f"Число {N}, разложенное на простые множетели = {list}")
+
+# ещё
+number = int(input("Введите число N: "))
+
+list = []
+i = 2
+
+while number > 2:
+    if number % 2 != 0:
+        i += 1
+    else:
+        number //= i
+        list.append(i)
+print(list)
