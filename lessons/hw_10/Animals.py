@@ -51,7 +51,6 @@ class Dogs(Animals):
     def __init__(self, name: str, weight: int, age: int, body_cover: str, dog_type: str):
         super().__init__(name, weight, age, body_cover)
         self.dog_type = dog_type
-        self.commands = []
 
     def area(self):
         return "Ходит по земле"
