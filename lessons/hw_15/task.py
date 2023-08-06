@@ -47,8 +47,8 @@ def parser_func():
 
 
 if __name__ == '__main__':
-    print(get_number(100, 2))
-    print(get_number(100, 6))
+    print(get_number(100, -6))
+    print(get_number(100, 4))
     print(get_number(100, 0))
 
     # Реализация из командной строки
