@@ -35,7 +35,6 @@ def test_step3(login):
     }
     response = requests.post(url=url_1, headers={'X-Auth-Token': login}, json=new_post)
 
-    # Проверка наличия созданного поста по полю "описание"
     response = requests.get(url=url_1, headers={'X-Auth-Token': login})
 
     posts = response.json()['data']
