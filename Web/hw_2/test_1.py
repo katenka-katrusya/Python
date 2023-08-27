@@ -29,16 +29,14 @@ def add_post():
     input_post_title = site.find_element("xpath", post_title_selector)
     input_post_title.send_keys(post_title)
 
-    # Ожидание перед нажатием кнопки создания поста
-    time.sleep(1)  # Задержка в секундах
+    time.sleep(1)
 
     # Нажатие кнопки создания поста
     create_post_button_selector = '//*[@id="create-btn"]'
     create_post_button = site.find_element("xpath", create_post_button_selector)
     create_post_button.click()
 
-    # Ожидание после нажатия кнопки создания поста
-    time.sleep(1)  # Задержка в секундах
+    time.sleep(1)
 
     # Проверка наличия названия поста на странице
     post_title_selector = '//*[@id="app"]/main/div/div[3]/div[1]/a[1]/h2'
