@@ -3,6 +3,7 @@ import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.alert import Alert
 from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.firefox import GeckoDriverManager
 
@@ -38,6 +39,10 @@ class Site:
     def get_element_property(self, mode, path, property):
         element = self.find_element(mode, path)
         return element.value_of_css_property(property)
+
+    def open_alert(self):
+        alert = Alert(self.driver)
+        return alert
 
     def close(self):
         self.driver.close()
